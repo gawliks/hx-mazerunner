@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "hx-mazerunner"
+version = "0.1.0"
+description = ""
+authors = ["Szczepan Gawlik <cybersg@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "hx_mazerunner" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110.1"
+uvicorn = { extras = ["standard"], version = "^0.29.0" }
+hiccupy = "^1.0.0"
+pyhiccup = "^0.1"
+
+
+[tool.poetry.group.dev.dependencies]
+autopep8 = "^2.1.0"
+ipykernel = "^6.29.4"
+
+[tool.autopep8]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.flake8]
